@@ -5,10 +5,12 @@
 body {
   background-image: url("@/assets/img/dirt.png");
   background-size: 32px;
+
 }
 
 #app {
   font-weight: normal;
+  overflow-x: hidden;
 }
 
 a,

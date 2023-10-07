@@ -34,6 +34,7 @@ header {
   justify-content: space-between;
   padding: 0 20px;
   padding-top: 6px;
+  overflow: hidden;
 
   p {
     font-weight: bold;
@@ -51,5 +52,9 @@ header::before {
   height: 127px;
   background-image: url("@/assets/img/grass_block_side.png");
   background-size: 32px;
+}
+
+footer {
+  height: 1000px;
 }
 </style>

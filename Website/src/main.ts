@@ -7,7 +7,7 @@ import router from './router';
 import Antd from 'ant-design-vue';
 import 'ant-design-vue/dist/reset.css';
 // ---------------------------- unicons ----------------------------
-import unicon from 'vue-unicons';
+import Unicon from 'vue-unicons';
 import { uniMoon } from 'vue-unicons/dist/icons';
 
 
@@ -16,8 +16,8 @@ app.use(router);
 // ---------------------------- antd ----------------------------
 app.use(Antd);
 // ---------------------------- unicons ----------------------------
-unicon.add([uniMoon]);
-app.use(unicon);
+Unicon.add([uniMoon]);
+app.use(Unicon);
 
 
 

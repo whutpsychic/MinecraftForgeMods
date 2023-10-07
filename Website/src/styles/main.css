@@ -1,0 +1,25 @@
+@import './base.css';
+@import './light/index.scss';
+@import './dark/index.scss';
+
+body {
+  background-image: url("@/assets/img/dirt.png");
+  background-size: 32px;
+}
+
+#app {
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}

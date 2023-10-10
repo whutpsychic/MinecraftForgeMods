@@ -1,18 +1,31 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
+import Overview from '../views/overview/main.vue'
+import Introduce from '../views/introduce/main.vue'
+import ZcutTrees from '../mods/zcut_trees/main.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    // ================== 总览 ==================
     {
-      path: '/home',
-      name: 'home',
-      component: Home
+      path: '/overview',
+      component: Overview
+    },
+    // ================== 模组介绍页 ==================
+    {
+      path: '/introduce',
+      component: Introduce,
+      children: [
+        {
+          path: '/introduce/zcut_trees',
+          component: ZcutTrees
+        }
+      ]
     },
     // ================== redirect ==================
     {
       path: '/',
-      redirect: '/home',
+      redirect: '/overview',
     }
   ]
 })

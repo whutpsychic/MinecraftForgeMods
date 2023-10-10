@@ -3,7 +3,7 @@
 @import './dark/index.scss';
 
 body {
-  background-image: url("@/assets/img/dirt.png");
+  background-image: url("@/assets/img-minecraft/dirt.png");
   background-size: 32px;
 
 }

@@ -10,7 +10,6 @@ import 'ant-design-vue/dist/reset.css';
 import Unicon from 'vue-unicons';
 import { uniMoon } from 'vue-unicons/dist/icons';
 
-
 const app = createApp(App);
 app.use(router);
 // ---------------------------- antd ----------------------------

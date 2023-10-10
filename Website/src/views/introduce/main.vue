@@ -2,7 +2,8 @@
   <main>
     <div class="left-menu"></div>
     <div class="main-content"></div>
-    <div class="right-addons"></div>
+    <!-- 未来预留的广告位 -->
+    <!-- <div class="right-addons"></div> -->
   </main>
 </template>
 
@@ -18,20 +19,20 @@ main {
 
 .left-menu {
   background-color: orange;
-  width: 30vw;
-  height: 700px;
+  width: 20vw;
+  height: calc(100vh - 120px);
 }
 
 .main-content {
   background-color: red;
-  width: 40vw;
-  height: 700px;
+  width: 80vw;
+  min-height: calc(100vh - 120px);
 }
 
 .right-addons {
   background-color: blue;
-  width: 30vw;
-  height: 700px;
+  width: 20vw;
+  min-height: 700px;
 }
 
 // 此时仅显示两列

@@ -79,6 +79,7 @@ const customRow = (record: any) => {
 <style lang="scss" scoped>
 main {
   background-color: #fff;
+  margin: 20px;
 }
 
 .price-can {

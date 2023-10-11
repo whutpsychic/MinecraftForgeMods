@@ -10,6 +10,7 @@ export const typeDictionary = [
   { name: "utility", discription: "实用型", color: "#C71585" },
   { name: "fun", discription: "娱乐型", color: "#4169E1" },
   { name: "creative", discription: "建造型", color: "#008B8B" },
+  { name: "pleasure", discription: "休闲型", color: "#FF00FF" },
 ]
 
 // 模组状态

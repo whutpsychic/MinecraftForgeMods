@@ -249,7 +249,7 @@ const modsInfo: Array<ModeInfo> = [
   {
     name: '死亡不掉落',
     range: "double",
-    type: "fun",
+    type: "pleasure",
     version: "1.0.0",
     state: "negative",
     versions: ['1.18.1', '1.16.4', '1.12.2'],

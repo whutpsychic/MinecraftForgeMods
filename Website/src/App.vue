@@ -92,7 +92,6 @@ header {
 }
 
 .main-body {
-  margin: 0 20px;
 }
 
 footer {}

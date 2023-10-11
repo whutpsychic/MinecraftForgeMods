@@ -26,6 +26,12 @@ const router = createRouter({
     {
       path: '/',
       redirect: '/overview',
+    },
+    // ================== 404 ==================
+    {
+      // 找不到路由重定向到404页面
+      path: "/:pathMatch(.*)",
+      component: () => import("@/views/404/main.vue")
     }
   ]
 })

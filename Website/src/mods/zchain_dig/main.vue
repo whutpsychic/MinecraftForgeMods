@@ -1,6 +1,6 @@
 <template>
   <main>
-    zcut trees!!!!!
+    zchain dig!!!!!
   </main>
 </template>
 

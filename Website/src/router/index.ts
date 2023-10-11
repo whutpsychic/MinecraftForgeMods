@@ -16,10 +16,8 @@ const router = createRouter({
       path: '/introduce',
       component: Introduce,
       children: [
-        {
-          path: '/introduce/zcut_trees',
-          component: ZcutTrees
-        }
+        { path: '/introduce/zcut_trees', component: ZcutTrees },
+        { path: '/introduce/zchain_dig', component: () => import("@/mods/zchain_dig/main.vue") },
       ]
     },
     // ================== redirect ==================

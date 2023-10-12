@@ -59,9 +59,8 @@ const onSelectMenu = (item: any) => {
   const target = LeftMenuData.find((it) => {
     return it.name === item.key
   })
-
+  store.commit('setModeName', item.key)
   const path = target?.router
-
   router.push(`/introduce${path}`)
 }
 
@@ -78,6 +77,13 @@ main {
   // background-color: orange;
   width: 256px;
   height: calc(100vh - 120px);
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.left-menu:hover {
+  overflow-y: auto;
+
 }
 
 .main-content {

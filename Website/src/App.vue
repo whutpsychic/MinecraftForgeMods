@@ -1,9 +1,9 @@
 <template>
-  <div :class="`theme-${store.state.style}`">
+  <div :class="`main-app-container theme-${store.state.style}`">
     <header>
       <div class="top-header">
         <!-- top section -->
-        <p>Minecraft Mods(Java Edition) From <span>Z_Bo</span></p>
+        <p class="title-text" @click="backToHome">Minecraft Mods(Java Edition) From <span>Z_Bo</span></p>
         <a-button shape="circle" @click="toggleStyle">
           <template #icon>
             <unicon name="moon" fill="white"></unicon>
@@ -17,16 +17,24 @@
     <main class="main-body">
       <RouterView />
     </main>
-    <footer></footer>
+    <footer>
+      <p>Copyright ©2021-2099 Z_Bo, All Rights Reserved.</p>
+    </footer>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { RouterView } from 'vue-router';
+import { RouterView, useRouter } from 'vue-router';
 import store from '@/store/index';
+
+const router = useRouter()
 
 const toggleStyle = () => {
   store.commit("toggleStyle");
+}
+
+const backToHome = () => {
+  router.replace("/")
 }
 
 </script>
@@ -36,6 +44,10 @@ header {
   height: 120px;
 }
 
+.title-text {
+  cursor: pointer;
+}
+
 .top-header {
   width: 100vw;
   background-image: url("@/assets/img/land-bg.webp");
@@ -43,7 +55,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 30px 0 20px;
   padding-top: 6px;
   overflow: hidden;
 
@@ -92,7 +104,21 @@ header {
 }
 
 .main-body {
+  // overflow: hidden;
+  min-height: calc(100vh - 200px);
 }
 
-footer {}
+footer {
+  height: 80px;
+  padding-top: 20px;
+  background-image: url("@/assets/img-minecraft/stone.png");
+  background-size: 32px;
+  display: flex;
+  justify-content: center;
+
+  p {
+    margin-bottom: 0;
+    color: white;
+  }
+}
 </style>

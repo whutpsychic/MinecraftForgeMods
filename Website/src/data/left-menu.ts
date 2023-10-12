@@ -210,7 +210,7 @@ const modsInfo: Array<ModeInfo> = [
     state: "for_sale",
     price: 300,
     priceType: "diamond",
-    router: "/zdirectenchant"
+    router: "/zdirect_enchant"
   },
   {
     name: '手抄附魔书',
@@ -221,7 +221,7 @@ const modsInfo: Array<ModeInfo> = [
     state: "for_sale",
     price: 300,
     priceType: "diamond",
-    router: "/zcopyenchantedbook"
+    router: "/zcopy_enchantedbook"
   },
   {
     name: '合成刷怪蛋',

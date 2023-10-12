@@ -45,7 +45,7 @@ import { reactive } from 'vue';
 import { RouterView, useRouter } from 'vue-router';
 import store from '@/store/index'
 import { AppstoreOutlined } from '@ant-design/icons-vue';
-import LeftMenuData from '@/data/left-menu';
+import { LeftMenuData } from "@/data/main"
 
 const router = useRouter()
 
@@ -74,7 +74,7 @@ main {
 }
 
 .left-menu {
-  // background-color: orange;
+  // background-color: pink;
   width: 256px;
   height: calc(100vh - 120px);
   overflow-x: hidden;
@@ -83,11 +83,10 @@ main {
 
 .left-menu:hover {
   overflow-y: auto;
-
 }
 
 .main-content {
-  background-color: red;
+  background-color: white;
   width: calc(100vw - 256px);
   min-height: calc(100vh - 120px);
 }

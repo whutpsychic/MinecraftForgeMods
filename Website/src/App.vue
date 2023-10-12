@@ -12,6 +12,7 @@
       </div>
       <div class="title-section">
         <p>{{ store.state.modeName }}</p>
+        <a-tag v-for="(ver) in vers" :key="ver" color="#f50">{{ ver }}</a-tag>
       </div>
     </header>
     <main class="main-body">
@@ -24,8 +25,10 @@
 </template>
 
 <script lang="ts" setup>
+import { computed } from 'vue'
 import { RouterView, useRouter } from 'vue-router';
 import store from '@/store/index';
+import { getVersionsByModeName } from '@/utils/tool'
 
 const router = useRouter()
 
@@ -36,6 +39,10 @@ const toggleStyle = () => {
 const backToHome = () => {
   router.replace("/")
 }
+
+const vers = computed(() => {
+  return getVersionsByModeName(store.state.modeName)
+})
 
 </script>
 

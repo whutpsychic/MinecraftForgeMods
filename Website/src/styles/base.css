@@ -2,3 +2,12 @@
     margin: 0;
     padding: 0;
 }
+
+li {
+    list-style: none;
+}
+
+/* 可点击的表格 */
+.clickable-table tbody tr {
+    cursor: pointer;
+}

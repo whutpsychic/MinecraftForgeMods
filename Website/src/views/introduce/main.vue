@@ -100,11 +100,11 @@ main {
 // 此时仅显示两列
 @media (max-width: 1279px) {
   .left-menu {
-    width: 30vw;
+    width: 256px;
   }
 
   .main-content {
-    width: 70vw;
+    width: calc(100vw - 256px);
   }
 
   .right-addons {

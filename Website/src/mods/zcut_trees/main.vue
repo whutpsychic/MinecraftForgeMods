@@ -6,10 +6,13 @@
           <Design :data="designData" />
         </a-tab-pane>
         <a-tab-pane key="introduce" tab="介绍">
-          <Introduce />
+          <Introduce :data="introduceData" />
         </a-tab-pane>
         <a-tab-pane key="FAQ" tab="FAQ">
-          <FAQ />
+          <FAQ :data="faqData" />
+        </a-tab-pane>
+        <a-tab-pane key="update" tab="更新记录">
+          <UpdateRecord :data="updateData" />
         </a-tab-pane>
       </a-tabs>
     </div>
@@ -18,8 +21,8 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { Design, Introduce, FAQ } from '@/components'
-import { designData } from './data'
+import { Design, Introduce, FAQ, UpdateRecord } from '@/components'
+import { designData, introduceData, faqData, updateData } from './data'
 
 const activeKey = ref('design')
 

@@ -1,10 +1,10 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import Overview from '../views/overview/main.vue'
 import Introduce from '../views/introduce/main.vue'
 import ZcutTrees from '../mods/zcut_trees/main.vue'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     // ================== 总览 ==================
     {

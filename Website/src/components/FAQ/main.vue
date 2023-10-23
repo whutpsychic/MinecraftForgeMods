@@ -31,14 +31,7 @@ const props = defineProps({
     span{
       font-weight: bold;
     }
-
-    .spliter {
-      margin: 20px 0;
-      margin-right: 40px;
-      // width: 100%;
-      height: 1px;
-      background-color: #ddd;
-    }
+   
   }
 }
 </style>

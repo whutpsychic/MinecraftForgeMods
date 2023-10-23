@@ -2,7 +2,7 @@
   <main>
     <a-table class="clickable-table" :dataSource="tableData" :pagination="pagination" :customRow="customRow">
       <a-table-column key="name" title="模组名称" data-index="name" :width="150" />
-      <a-table-column key="range" title="模组适用范围" data-index="range" :width="150">
+      <a-table-column key="range" title="适用范围" data-index="range" :width="150">
         <template #customRender="{ record }">
           <a-tag color="#f50">{{ renderCellTextByOptions(record.range, rangeDictionary) }}</a-tag>
         </template>

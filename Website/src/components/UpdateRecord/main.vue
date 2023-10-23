@@ -38,13 +38,7 @@ const props = defineProps({
     .version {
       margin-left: 1em;
     }
-
-    .spliter {
-      margin: 20px 0;
-      margin-right: 40px;
-      height: 1px;
-      background-color: #ddd;
-    }
+  
   }
 }
 
